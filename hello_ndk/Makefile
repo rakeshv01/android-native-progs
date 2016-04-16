@@ -1,11 +1,12 @@
 
-BLD_TOOLS=/home/rakesh/nav/andr/andr5_nexus/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/bin
-CC=$(BLD_TOOLS)/arm-linux-androideabi-gcc
-CXX=$(BLD_TOOLS)/arm-linux-androideabi-g++
-
 NDK_ROOT=/home/rakesh/nav/andr/android-ndk-r10e
 ARCH=arm
 CROSS_COMPILE=arm-linux-androideabi-
+
+BLD_TOOLS=$(NDK_ROOT)/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin
+
+CC=$(BLD_TOOLS)/arm-linux-androideabi-gcc
+CXX=$(BLD_TOOLS)/arm-linux-androideabi-g++
 
 CFLAGS=-I$(NDK_ROOT)/platforms/android-19/arch-arm/usr/include -g -c -Wall
 
